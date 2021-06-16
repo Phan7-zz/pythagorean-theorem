@@ -1,5 +1,5 @@
-# To make this code works, you have to give just two values of the triangle, the value that you don't know, you have to input "x"
-# The value that the code returns, is the value of the "x"
+# To make this code works, you have to give just two values of the triangle
+# The value that you don't know, you have to input "x"
 
 def get_values():
     print('Input the values that you know. If you do not know a velue, input"x"')
