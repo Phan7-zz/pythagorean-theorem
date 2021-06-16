@@ -1,4 +1,4 @@
-# To make this code works, you have to give just two values of the triangle, the value that you don't know, you have to type "x" and press enter
+# To make this code works, you have to give just two values of the triangle, the value that you don't know, you have to input "x"
 # The value that the code returns, is the value of the "x"
 
 def get_values():
