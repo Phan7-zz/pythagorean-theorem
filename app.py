@@ -2,10 +2,10 @@
 # The value that the code returns, is the value of the "x"
 
 def get_values():
-    print('Digite os valores que você sabe, o lado que você não souber, digite "X"')
+    print('Input the values that you know. If you do not know a velue, input"x"')
     values = []
     letter = False
-    for a in ('Cateto 1: ', 'Cateto 2: ', 'Hipotenusa: '):
+    for a in ('Side 1: ', 'Side 2: ', 'hypotenuse: '):
         while True:
             b = input(a)
             if b.isnumeric():
@@ -16,7 +16,7 @@ def get_values():
                 letter = True
                 break
             else:
-                print(f'Digite um valor válido!')
+                print('Input a valid value!')
     
     return values
 
@@ -29,17 +29,17 @@ def calc(values):
 
     if letter == 0:
         a = h ** 2 - c_2 ** 2
-        b = f'O valor do cateto 1 é: {a ** 0.5}'
+        b = f'The value of the Side 1 is: {a ** 0.5}'
         return b
 
     elif letter == 1:
         a = h ** 2 - c_1 ** 2
-        b = f'O valor do Cateto 2 é: {a ** 0.5}'
+        b = f'The value of the Side 2 is: {a ** 0.5}'
         return b
     
     elif letter == 2:
         a = c_1 ** 2 + c_2 ** 2
-        b = f'O valor da Hipotenusa é: {a ** 0.5}'
+        b = f'The value the Hypotenuse is: {a ** 0.5}'
         return b
 
 values = get_values()
