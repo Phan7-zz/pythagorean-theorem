@@ -2,6 +2,7 @@
 # The value that you don't know, you have to input "x"
 
 def get_values():
+    # This function will get the values of the triangle
     print('Input the values that you know. If you do not know a velue, input"x"')
     values = []
     letter = False
@@ -12,7 +13,7 @@ def get_values():
                 values.append(float(b))
                 break
             elif b.lower() == 'x' and letter is False:
-                values.append(b)
+                values.append(b.lower())
                 letter = True
                 break
             else:
